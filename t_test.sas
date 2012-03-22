@@ -24,6 +24,8 @@ B       0.65    740
 proc print data=efh;
 run;
  
+/*comment*/
+
 proc ttest data=efh;
    class cond;
    var test;
