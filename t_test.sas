@@ -35,3 +35,7 @@ proc anova data=efh;
    class cond;
    model msat=cond;
 run;
+
+proc reg data=efh;
+   model msat=test;
+run;
