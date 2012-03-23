@@ -30,3 +30,8 @@ proc ttest data=efh;
    class cond;
    var test;
 run; 
+
+proc anova data=efh;
+   class cond;
+   model msat=cond;
+run;
